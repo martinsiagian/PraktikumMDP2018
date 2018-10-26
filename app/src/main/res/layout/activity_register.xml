@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mon"
+    tools:context=".LoginActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/rlLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:id="@+id/ivLogin"
+            android:layout_width="197dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="LOGO"
+            android:src="@drawable/awe"
+            app:layout_constraintBottom_toTopOf="@+id/appCompatTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="107dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/regtittle"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/coba"
+            app:layout_constraintBottom_toTopOf="@+id/etUsernameRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogin" />
+
+
+        <EditText
+            android:id="@+id/etUsernameRegister"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="149dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginBottom="7dp"
+            android:hint="@string/user"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/coba"
+            app:layout_constraintBottom_toTopOf="@+id/btRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+        <EditText
+            android:id="@+id/etPasswordRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginBottom="11dp"
+            android:hint="@string/password"
+            android:imeActionId="6"
+            android:imeActionLabel="Sign In"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+            app:layout_constraintBottom_toTopOf="@+id/btRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etUsernameRegister" />
+
+
+        <Button
+            android:id="@+id/btRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="148dp"
+            android:background="@drawable/roundedbutton"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etUsernameRegister" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
